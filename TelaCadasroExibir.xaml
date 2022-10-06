@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Atividade1.TelaCadastroExibir">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <Label Text="Nome"/>
+            <Entry Placeholder="Nome" 
+                   x:Name="txtNome"/>
+
+            <Label Text="Idade"/>
+            <Entry Placeholder="Idade" 
+                   x:Name="txtIdade"/>
+
+            <Label Text="Sexo"/>
+            <Entry Placeholder="Sexo" 
+                   x:Name="txtSexo"/>
+
+            <Label Text="Telefone"/>
+            <Entry Placeholder="Telefone" 
+                   x:Name="txtTelefone"/>
+
+            <Label Text="Rua"/>
+            <Entry Placeholder="Rua" 
+                   x:Name="txtRua"/>
+
+ 
+
+            <Grid>
+                <Grid.ColumnDefinitions Width="Auto">
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Cadastrar" 
+                    x:Name="btnEntrar"
+                    Clicked="btnCadastrar_Clicked"
+                        Grid.Column="0"/>
+                <Button Text="Limpar" 
+                    x:Name="btnLimpar"
+                    Clicked="btnLimpar_Clicked"
+                        Grid.Column="1"/>
+                <Button Text="Visualizar" 
+                    x:Name="btnVisualizar"
+                    Clicked="btnVisualizar_Clicked"
+                        Grid.Column="2"/>
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

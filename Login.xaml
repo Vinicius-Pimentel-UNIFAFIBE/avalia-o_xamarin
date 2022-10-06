@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Atividade1.Login"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+            <Label Text="Seja bem-vindo!"
+                   TextColor="Green"
+                   FontSize="36"
+                   HorizontalTextAlignment="Center"
+                   Padding="30"/>
+                   
+            <Frame CornerRadius="10" 
+                   BackgroundColor="Green">
+                <StackLayout>
+
+
+                    <Label Text="Login: " 
+                           TextColor="White"
+                           FontSize="30"/>
+
+                    <Entry Placeholder="Login"
+                           x:Name="txtlogin"/>
+
+                    <Label Text="Senha: "
+                           TextColor="White"
+                           FontSize="30"/>
+                    <Entry Placeholder="Senha"
+                           x:Name="txtSenha"
+                           IsPassword="True"/>
+
+                    <Label Text="Nome nesta sessão: "
+                           TextColor="White"
+                           FontSize="30"/>
+                    
+                    <Entry Placeholder="Nome usado na sessão"
+                           x:Name="txtNome"/>
+
+                    <Button Text="Entrar"
+                            x:Name="btnEntrar"
+                            Clicked="btnEntrar_Clicked"
+                            BackgroundColor="Red"
+                            TextColor="Green"/>
+                    
+                </StackLayout>
+            </Frame>
+            <Image Source=
+            "https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/06/22121713/escudo-palmeiras-atual.png"
+            WidthRequest="100"
+            HeightRequest="100"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

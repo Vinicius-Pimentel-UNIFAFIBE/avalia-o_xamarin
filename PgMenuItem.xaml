@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Atividade1.PgMenuItem"
+             BackgroundColor="Green"
+             Title="Menu">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source=
+            "https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/06/22121713/escudo-palmeiras-atual.png"
+            WidthRequest="100"
+            HeightRequest="100"/>
+
+            <Frame CornerRadius="10" 
+                   BackgroundColor="White">
+                <StackLayout>
+                    <Label Text="" 
+                   TextColor="Green"
+                   FontSize="30"
+                   HorizontalOptions="Center"
+                   x:Name="labelLogin"/>
+                </StackLayout>
+            </Frame>
+
+            <Button x:Name="btnCadDisplay"
+                    Text="Cad Display Alert"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="btnCadDisplay_Clicked"
+                    ImageSource="https://img.icons8.com/material/24/000000/edit-user-male--v1.png"/>
+
+            <Button x:Name="btnCadSingleton"
+                    Text="Cad Class Singleton"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="btnCadSingleton_Clicked"
+                    ImageSource="https://img.icons8.com/material/24/000000/add-user-male--v1.png"/>
+
+            <Button x:Name="btnLinkedin"
+                    Text="Página LinkedIn"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="btnLinkedin_Clicked"
+                    ImageSource="https://img.icons8.com/material/24/000000/linkedin--v1.png"/>
+
+            <Button x:Name="btnLogout"
+                    Text="LogOut"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="btnLogout_Clicked"
+                    ImageSource="https://img.icons8.com/material/24/000000/exit.png"/>
+
+            <Label Text="Nome da empresa: SE Palmeiras Sistemas - Versão: 1.0.0" 
+                           TextColor="White"
+                           FontSize="13"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="End"
+                   HeightRequest="500"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

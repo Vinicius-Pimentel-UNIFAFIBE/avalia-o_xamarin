@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Atividade1.PaginaLinkedin">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Página LinkedIn - Vinicius Pimentel"
+                   TextColor="Green"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   Padding="30"/>
+            <Frame Margin="-10"
+       BorderColor="Black"
+       CornerRadius="100"
+       HeightRequest="80"
+       WidthRequest="80"
+       IsClippedToBounds="True"
+       HorizontalOptions="Center"
+       VerticalOptions="Center">
+                <StackLayout>
+
+                    
+                    <Image Source="foto.jpeg"
+                           Aspect="AspectFill"
+                           Margin="-30"
+                           HeightRequest="130"
+                           WidthRequest="130"></Image>
+                </StackLayout>
+                
+            </Frame>
+
+            <Frame CornerRadius="10" 
+                   BackgroundColor="Green">
+                <StackLayout>
+
+
+                    <Label Text="Nome: Vinicius Pimentel" 
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Profissão: Estudante universitário"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Empresa: Vago"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Cidade: Bebedouro"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Estado: São Paulo"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="País: Brasil"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Estudos: Cursando ensino superior"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Instituições de ensino: UNIFAFIBE e CCAA"
+                           TextColor="White"
+                           FontSize="15"/>
+
+                    <Label Text="Habilidades: Service Desk"
+                           TextColor="White"
+                           FontSize="15"/>
+
+
+                </StackLayout>
+            </Frame>
+            <Image Source=
+            "https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2020/06/22121713/escudo-palmeiras-atual.png"
+            WidthRequest="100"
+            HeightRequest="100"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
